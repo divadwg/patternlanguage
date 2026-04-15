@@ -1,0 +1,56 @@
+[
+  {
+    "id": "dezeen-architecture",
+    "name": "Dezeen — Architecture",
+    "url": "https://www.dezeen.com/architecture/",
+    "kind": "html_index",
+    "linkSelector": "",
+    "enabled": false,
+    "note": "Disabled — Dezeen is behind Cloudflare bot protection that 403s even real browser UAs. Needs a headless browser to scrape."
+  },
+  {
+    "id": "archdaily",
+    "name": "ArchDaily",
+    "url": "https://www.archdaily.com/",
+    "kind": "html_index",
+    "linkSelector": "",
+    "enabled": true,
+    "note": "Large global architecture archive. Article URLs have a numeric id + slug."
+  },
+  {
+    "id": "strong-towns",
+    "name": "Strong Towns",
+    "url": "https://www.strongtowns.org/journal",
+    "kind": "html_index",
+    "linkSelector": "",
+    "enabled": true,
+    "note": "Urbanism criticism — rich source of town-scale patterns."
+  },
+  {
+    "id": "cnu-public-square",
+    "name": "CNU Public Square",
+    "url": "https://www.cnu.org/publicsquare",
+    "kind": "html_index",
+    "linkSelector": "",
+    "enabled": true,
+    "note": "Congress for the New Urbanism. Walkable, human-scaled places."
+  },
+  {
+    "id": "common-edge",
+    "name": "Common Edge",
+    "url": "https://commonedge.org/",
+    "kind": "html_index",
+    "linkSelector": "",
+    "enabled": true,
+    "note": "Architecture writing focused on the human and civic dimensions."
+  },
+  {
+    "id": "failed-architecture",
+    "name": "Failed Architecture",
+    "url": "https://failedarchitecture.com/",
+    "kind": "html_index",
+    "linkSelector": "",
+    "enabled": false,
+    "note": "Critical writing — often useful as 'anti-patterns'."
+  }
+]

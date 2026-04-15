@@ -1,0 +1,1457 @@
+[
+  {
+    "from": "u-mixed-use-districts",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-mixed-use-districts",
+    "to": "041-work-community",
+    "kind": "related"
+  },
+  {
+    "from": "u-mixed-use-districts",
+    "to": "048-housing-in-between",
+    "kind": "related"
+  },
+  {
+    "from": "u-short-blocks",
+    "to": "100-pedestrian-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-short-blocks",
+    "to": "121-path-shape",
+    "kind": "related"
+  },
+  {
+    "from": "u-short-blocks",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-eyes-on-the-street",
+    "to": "164-street-windows",
+    "kind": "related"
+  },
+  {
+    "from": "u-eyes-on-the-street",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-eyes-on-the-street",
+    "to": "119-arcades",
+    "kind": "related"
+  },
+  {
+    "from": "u-sidewalk-interaction",
+    "to": "124-activity-pockets",
+    "kind": "related"
+  },
+  {
+    "from": "u-sidewalk-interaction",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-sidewalk-interaction",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-old-buildings-for-new-uses",
+    "to": "095-building-complex",
+    "kind": "related"
+  },
+  {
+    "from": "u-old-buildings-for-new-uses",
+    "to": "019-web-of-shopping",
+    "kind": "related"
+  },
+  {
+    "from": "u-concentration-of-people",
+    "to": "010-magic-of-the-city",
+    "kind": "related"
+  },
+  {
+    "from": "u-concentration-of-people",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-concentration-of-people",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-diverse-economic-base",
+    "to": "041-work-community",
+    "kind": "related"
+  },
+  {
+    "from": "u-diverse-economic-base",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-replacement-ratio",
+    "to": "095-building-complex",
+    "kind": "related"
+  },
+  {
+    "from": "u-replacement-ratio",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-replacement-ratio",
+    "to": "037-house-cluster",
+    "kind": "related"
+  },
+  {
+    "from": "u-street-intricacy",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-street-intricacy",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-permeable-overlapping-uses",
+    "to": "041-work-community",
+    "kind": "related"
+  },
+  {
+    "from": "u-permeable-overlapping-uses",
+    "to": "124-activity-pockets",
+    "kind": "related"
+  },
+  {
+    "from": "u-permeable-overlapping-uses",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-corner-stores",
+    "to": "087-individually-owned-shops",
+    "kind": "related"
+  },
+  {
+    "from": "u-corner-stores",
+    "to": "089-corner-grocery",
+    "kind": "related"
+  },
+  {
+    "from": "u-community-centric-planning",
+    "to": "015-neighborhood-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-centralized-power-fallacy",
+    "to": "087-individually-owned-shops",
+    "kind": "related"
+  },
+  {
+    "from": "u-organic-urban-growth",
+    "to": "003-city-country-fingers",
+    "kind": "related"
+  },
+  {
+    "from": "u-organic-urban-growth",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale-design",
+    "to": "021-four-story-limit",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale-design",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale-design",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-mediated-technological-impact",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-mediated-technological-impact",
+    "to": "041-work-community",
+    "kind": "related"
+  },
+  {
+    "from": "u-city-as-a-living-organism",
+    "to": "043-university-as-a-marketplace",
+    "kind": "related"
+  },
+  {
+    "from": "u-city-as-a-living-organism",
+    "to": "012-community-of-7000",
+    "kind": "related"
+  },
+  {
+    "from": "u-preservation-of-diversity",
+    "to": "010-magic-of-the-city",
+    "kind": "related"
+  },
+  {
+    "from": "u-preservation-of-diversity",
+    "to": "009-scattered-work",
+    "kind": "related"
+  },
+  {
+    "from": "u-preservation-of-diversity",
+    "to": "011-local-transport-areas",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-spaces-as-social-catalysts",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-spaces-as-social-catalysts",
+    "to": "067-common-land",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-spaces-as-social-catalysts",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-integration-with-nature",
+    "to": "051-green-streets",
+    "kind": "related"
+  },
+  {
+    "from": "u-integration-with-nature",
+    "to": "004-agricultural-valleys",
+    "kind": "related"
+  },
+  {
+    "from": "u-efficient-urban-transport",
+    "to": "017-ring-roads",
+    "kind": "related"
+  },
+  {
+    "from": "u-historical-layers",
+    "to": "066-holy-ground",
+    "kind": "related"
+  },
+  {
+    "from": "u-social-infrastructure",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-social-infrastructure",
+    "to": "013-subculture-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-city-s-core-and-periphery",
+    "to": "029-density-rings",
+    "kind": "related"
+  },
+  {
+    "from": "u-adaptive-reuse-of-buildings",
+    "to": "040-old-people-everywhere",
+    "kind": "related"
+  },
+  {
+    "from": "u-adaptive-reuse-of-buildings",
+    "to": "110-main-entrance",
+    "kind": "related"
+  },
+  {
+    "from": "u-community-oriented-development",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-cultivate-insideness",
+    "to": "044-local-town-hall",
+    "kind": "related"
+  },
+  {
+    "from": "u-cultivate-insideness",
+    "to": "012-community-of-7000",
+    "kind": "related"
+  },
+  {
+    "from": "u-emphasize-local-identity",
+    "to": "013-subculture-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-emphasize-local-identity",
+    "to": "040-old-people-everywhere",
+    "kind": "related"
+  },
+  {
+    "from": "u-preserve-vernacular-architecture",
+    "to": "014-identifiable-neighborhood",
+    "kind": "related"
+  },
+  {
+    "from": "u-preserve-vernacular-architecture",
+    "to": "037-house-cluster",
+    "kind": "related"
+  },
+  {
+    "from": "u-create-places-with-unique-character",
+    "to": "044-local-town-hall",
+    "kind": "related"
+  },
+  {
+    "from": "u-create-places-with-unique-character",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-encourage-local-participation",
+    "to": "012-community-of-7000",
+    "kind": "related"
+  },
+  {
+    "from": "u-encourage-local-participation",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-celebrate-historical-continuity",
+    "to": "044-local-town-hall",
+    "kind": "related"
+  },
+  {
+    "from": "u-celebrate-historical-continuity",
+    "to": "015-neighborhood-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-promote-small-scale-variability",
+    "to": "021-four-story-limit",
+    "kind": "related"
+  },
+  {
+    "from": "u-promote-small-scale-variability",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-support-local-businesses",
+    "to": "032-shopping-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-support-local-businesses",
+    "to": "087-individually-owned-shops",
+    "kind": "related"
+  },
+  {
+    "from": "u-enhance-accessibility-to-diverse-spaces",
+    "to": "060-accessible-green",
+    "kind": "related"
+  },
+  {
+    "from": "u-distinguish-space-from-place",
+    "to": "014-identifiable-neighborhood",
+    "kind": "related"
+  },
+  {
+    "from": "u-distinguish-space-from-place",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-foster-topophilia",
+    "to": "067-common-land",
+    "kind": "related"
+  },
+  {
+    "from": "u-experience-of-landscapes",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-experience-of-landscapes",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-create-lived-environments",
+    "to": "015-neighborhood-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-create-lived-environments",
+    "to": "026-life-cycle",
+    "kind": "related"
+  },
+  {
+    "from": "u-intimate-spaces",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-intimate-spaces",
+    "to": "127-intimacy-gradient",
+    "kind": "related"
+  },
+  {
+    "from": "u-reflective-spaces",
+    "to": "134-zen-view",
+    "kind": "related"
+  },
+  {
+    "from": "u-reflective-spaces",
+    "to": "204-secret-place",
+    "kind": "related"
+  },
+  {
+    "from": "u-experience-of-fear-in-spaces",
+    "to": "106-positive-outdoor-space",
+    "kind": "related"
+  },
+  {
+    "from": "u-meaningful-place-names",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-meaningful-place-names",
+    "to": "014-identifiable-neighborhood",
+    "kind": "related"
+  },
+  {
+    "from": "u-cultural-imprints-in-landscapes",
+    "to": "037-house-cluster",
+    "kind": "related"
+  },
+  {
+    "from": "u-cultural-imprints-in-landscapes",
+    "to": "040-old-people-everywhere",
+    "kind": "related"
+  },
+  {
+    "from": "u-irregular-square-layout",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-irregular-square-layout",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-enclosed-squares",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-enclosed-squares",
+    "to": "160-building-edge",
+    "kind": "related"
+  },
+  {
+    "from": "u-asymmetrical-square-design",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale-proportions",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale-proportions",
+    "to": "025-access-to-water",
+    "kind": "related"
+  },
+  {
+    "from": "u-spatial-sequence",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-visual-landmarks",
+    "to": "024-sacred-sites",
+    "kind": "related"
+  },
+  {
+    "from": "u-functional-diversity-in-squares",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-functional-diversity-in-squares",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrated-edges",
+    "to": "160-building-edge",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrated-edges",
+    "to": "089-corner-grocery",
+    "kind": "related"
+  },
+  {
+    "from": "u-varied-pavement",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-animated-facades",
+    "to": "122-building-fronts",
+    "kind": "related"
+  },
+  {
+    "from": "u-gradual-money",
+    "to": "u-old-buildings-for-new-uses",
+    "kind": "related"
+  },
+  {
+    "from": "u-gradual-money",
+    "to": "u-diverse-economic-base",
+    "kind": "related"
+  },
+  {
+    "from": "u-promiscuous-street-uses",
+    "to": "u-mixed-use-districts",
+    "kind": "related"
+  },
+  {
+    "from": "u-promiscuous-street-uses",
+    "to": "u-short-blocks",
+    "kind": "related"
+  },
+  {
+    "from": "u-promiscuous-street-uses",
+    "to": "u-street-intricacy",
+    "kind": "related"
+  },
+  {
+    "from": "u-population-diversity",
+    "to": "u-concentration-of-people",
+    "kind": "related"
+  },
+  {
+    "from": "u-population-diversity",
+    "to": "u-diverse-economic-base",
+    "kind": "related"
+  },
+  {
+    "from": "u-population-diversity",
+    "to": "u-community-centric-planning",
+    "kind": "related"
+  },
+  {
+    "from": "u-power-of-ten",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-power-of-ten",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-multi-use-destinations",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-multi-use-destinations",
+    "to": "063-dancing-in-the-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-comfort-and-image",
+    "to": "106-positive-outdoor-space",
+    "kind": "related"
+  },
+  {
+    "from": "u-comfort-and-image",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-sociable-environments",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-sociable-environments",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-sociable-environments",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-easy-access-and-linkages",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-easy-access-and-linkages",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-spaces-as-destinations",
+    "to": "150-a-place-to-wait",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-spaces-as-destinations",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-community-involvement-in-design",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-visible-signs-of-care",
+    "to": "165-opening-to-the-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-engaging-the-senses",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-engaging-the-senses",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-develop-with-soil-profiles",
+    "to": "104-site-repair",
+    "kind": "related"
+  },
+  {
+    "from": "u-vegetation-overlay-in-planning",
+    "to": "171-tree-places",
+    "kind": "related"
+  },
+  {
+    "from": "u-vegetation-overlay-in-planning",
+    "to": "051-green-streets",
+    "kind": "related"
+  },
+  {
+    "from": "u-wildlife-corridors-in-urban-design",
+    "to": "025-access-to-water",
+    "kind": "related"
+  },
+  {
+    "from": "u-wildlife-corridors-in-urban-design",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-embrace-site-s-natural-logic",
+    "to": "014-identifiable-neighborhood",
+    "kind": "related"
+  },
+  {
+    "from": "u-use-land-capability-analysis",
+    "to": "104-site-repair",
+    "kind": "related"
+  },
+  {
+    "from": "u-ecological-suitability-zoning",
+    "to": "003-city-country-fingers",
+    "kind": "related"
+  },
+  {
+    "from": "u-ecological-suitability-zoning",
+    "to": "042-industrial-ribbon",
+    "kind": "related"
+  },
+  {
+    "from": "u-preserve-natural-landforms",
+    "to": "104-site-repair",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrated-planning-for-resilience",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrated-planning-for-resilience",
+    "to": "014-identifiable-neighborhood",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scaled-streets",
+    "to": "121-path-shape",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scaled-streets",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-defined-public-space",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-defined-public-space",
+    "to": "044-local-town-hall",
+    "kind": "related"
+  },
+  {
+    "from": "u-defined-public-space",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-mixed-use-development",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-mixed-use-development",
+    "to": "048-housing-in-between",
+    "kind": "related"
+  },
+  {
+    "from": "u-legacy-urbanism",
+    "to": "120-paths-and-goals",
+    "kind": "related"
+  },
+  {
+    "from": "u-legacy-urbanism",
+    "to": "044-local-town-hall",
+    "kind": "related"
+  },
+  {
+    "from": "u-legacy-urbanism",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-dense-network-of-transit",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-dense-network-of-transit",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-dense-network-of-transit",
+    "to": "017-ring-roads",
+    "kind": "related"
+  },
+  {
+    "from": "u-transit-oriented-development",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-transit-oriented-development",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-local-economic-nodes",
+    "to": "089-corner-grocery",
+    "kind": "related"
+  },
+  {
+    "from": "u-local-economic-nodes",
+    "to": "087-individually-owned-shops",
+    "kind": "related"
+  },
+  {
+    "from": "u-pedestrian-priority-zones",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-pedestrian-priority-zones",
+    "to": "032-shopping-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-pedestrian-priority-zones",
+    "to": "059-quiet-backs",
+    "kind": "related"
+  },
+  {
+    "from": "u-encourage-mixed-use-neighborhoods",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-encourage-mixed-use-neighborhoods",
+    "to": "048-housing-in-between",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrate-nature-with-urban-living",
+    "to": "051-green-streets",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrate-nature-with-urban-living",
+    "to": "134-zen-view",
+    "kind": "related"
+  },
+  {
+    "from": "u-promote-social-interaction",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-promote-social-interaction",
+    "to": "012-community-of-7000",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scaled-urban-spaces",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-limit-urban-sprawl",
+    "to": "003-city-country-fingers",
+    "kind": "related"
+  },
+  {
+    "from": "u-encourage-walking-and-cycling",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-create-safe-public-spaces",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-design-for-universal-accessibility",
+    "to": "060-accessible-green",
+    "kind": "related"
+  },
+  {
+    "from": "u-optimize-public-transport-systems",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-optimize-public-transport-systems",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-walkable-streets",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-walkable-streets",
+    "to": "032-shopping-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-walkable-streets",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-compact-urban-form",
+    "to": "009-scattered-work",
+    "kind": "related"
+  },
+  {
+    "from": "u-defined-civic-spaces",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-defined-civic-spaces",
+    "to": "127-intimacy-gradient",
+    "kind": "related"
+  },
+  {
+    "from": "u-defined-civic-spaces",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scaled-buildings",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scaled-buildings",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-street-networks",
+    "to": "019-web-of-shopping",
+    "kind": "related"
+  },
+  {
+    "from": "u-street-networks",
+    "to": "171-tree-places",
+    "kind": "related"
+  },
+  {
+    "from": "u-diverse-housing-options",
+    "to": "035-household-mix",
+    "kind": "related"
+  },
+  {
+    "from": "u-diverse-housing-options",
+    "to": "095-building-complex",
+    "kind": "related"
+  },
+  {
+    "from": "u-active-frontages",
+    "to": "032-shopping-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-transport-access",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-transport-access",
+    "to": "068-connected-play",
+    "kind": "related"
+  },
+  {
+    "from": "u-territorial-zoning",
+    "to": "037-house-cluster",
+    "kind": "related"
+  },
+  {
+    "from": "u-natural-surveillance",
+    "to": "164-street-windows",
+    "kind": "related"
+  },
+  {
+    "from": "u-natural-surveillance",
+    "to": "121-path-shape",
+    "kind": "related"
+  },
+  {
+    "from": "u-hierarchical-public-spaces",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-hierarchical-public-spaces",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-controlled-access-points",
+    "to": "130-entrance-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-controlled-access-points",
+    "to": "110-main-entrance",
+    "kind": "related"
+  },
+  {
+    "from": "u-informal-resident-control",
+    "to": "015-neighborhood-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-sense-of-enclosure",
+    "to": "112-entrance-transition",
+    "kind": "related"
+  },
+  {
+    "from": "u-sense-of-enclosure",
+    "to": "158-open-stairs",
+    "kind": "related"
+  },
+  {
+    "from": "u-social-pathways",
+    "to": "100-pedestrian-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-defined-personal-space",
+    "to": "193-half-open-wall",
+    "kind": "related"
+  },
+  {
+    "from": "u-shared-courtyards",
+    "to": "102-family-of-entrances",
+    "kind": "related"
+  },
+  {
+    "from": "u-defensible-property-lines",
+    "to": "106-positive-outdoor-space",
+    "kind": "related"
+  },
+  {
+    "from": "u-transition-zones",
+    "to": "112-entrance-transition",
+    "kind": "related"
+  },
+  {
+    "from": "u-transition-zones",
+    "to": "095-building-complex",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale-street-widths",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale-street-widths",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-continuous-building-frontage",
+    "to": "119-arcades",
+    "kind": "related"
+  },
+  {
+    "from": "u-tree-canopy-in-streets",
+    "to": "171-tree-places",
+    "kind": "related"
+  },
+  {
+    "from": "u-tree-canopy-in-streets",
+    "to": "051-green-streets",
+    "kind": "related"
+  },
+  {
+    "from": "u-building-heights-in-scale-with-street-width",
+    "to": "021-four-story-limit",
+    "kind": "related"
+  },
+  {
+    "from": "u-building-heights-in-scale-with-street-width",
+    "to": "160-building-edge",
+    "kind": "related"
+  },
+  {
+    "from": "u-craftsmanship-in-street-details",
+    "to": "243-sitting-wall",
+    "kind": "related"
+  },
+  {
+    "from": "u-shorter-block-lengths",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-diverse-building-design",
+    "to": "008-mosaic-of-subcultures",
+    "kind": "related"
+  },
+  {
+    "from": "u-visual-termination-of-streets",
+    "to": "053-main-gateways",
+    "kind": "related"
+  },
+  {
+    "from": "u-visual-termination-of-streets",
+    "to": "015-neighborhood-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-active-ground-floors",
+    "to": "119-arcades",
+    "kind": "related"
+  },
+  {
+    "from": "u-traffic-free-zones",
+    "to": "100-pedestrian-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-traffic-free-zones",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-traffic-calming-measures",
+    "to": "u-street-networks",
+    "kind": "related"
+  },
+  {
+    "from": "u-home-territory-extension",
+    "to": "112-entrance-transition",
+    "kind": "related"
+  },
+  {
+    "from": "u-home-territory-extension",
+    "to": "242-front-door-bench",
+    "kind": "related"
+  },
+  {
+    "from": "u-home-territory-extension",
+    "to": "101-building-thoroughfare",
+    "kind": "related"
+  },
+  {
+    "from": "u-resident-led-speed-management",
+    "to": "014-identifiable-neighborhood",
+    "kind": "related"
+  },
+  {
+    "from": "u-resident-led-speed-management",
+    "to": "011-local-transport-areas",
+    "kind": "related"
+  },
+  {
+    "from": "u-street-social-spaces",
+    "to": "243-sitting-wall",
+    "kind": "related"
+  },
+  {
+    "from": "u-street-social-spaces",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-mixed-use-traffic-lanes",
+    "to": "023-parallel-roads",
+    "kind": "related"
+  },
+  {
+    "from": "u-mixed-use-traffic-lanes",
+    "to": "052-network-of-paths-and-cars",
+    "kind": "related"
+  },
+  {
+    "from": "u-quiet-residential-streets",
+    "to": "025-access-to-water",
+    "kind": "related"
+  },
+  {
+    "from": "u-neighborhood-identity-through-street-design",
+    "to": "014-identifiable-neighborhood",
+    "kind": "related"
+  },
+  {
+    "from": "u-neighborhood-identity-through-street-design",
+    "to": "012-community-of-7000",
+    "kind": "related"
+  },
+  {
+    "from": "u-community-input-in-street-design",
+    "to": "010-magic-of-the-city",
+    "kind": "related"
+  },
+  {
+    "from": "u-community-input-in-street-design",
+    "to": "011-local-transport-areas",
+    "kind": "related"
+  },
+  {
+    "from": "u-vibrant-sidewalks",
+    "to": "171-tree-places",
+    "kind": "related"
+  },
+  {
+    "from": "u-vibrant-sidewalks",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-legible-city-structure",
+    "to": "013-subculture-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-distinctive-landmarks",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-network-of-paths",
+    "to": "100-pedestrian-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-network-of-paths",
+    "to": "120-paths-and-goals",
+    "kind": "related"
+  },
+  {
+    "from": "u-variety-of-districts",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-variety-of-districts",
+    "to": "046-market-of-many-shops",
+    "kind": "related"
+  },
+  {
+    "from": "u-accessible-edges",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-nodes-of-activity",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-nodes-of-activity",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-temporal-adaptability",
+    "to": "041-work-community",
+    "kind": "related"
+  },
+  {
+    "from": "u-human-scale",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-compatible-building-forms",
+    "to": "102-family-of-entrances",
+    "kind": "related"
+  },
+  {
+    "from": "u-compatible-building-forms",
+    "to": "038-row-houses",
+    "kind": "related"
+  },
+  {
+    "from": "u-public-interaction-spaces",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-sequential-experience",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-responsive-urban-planning",
+    "to": "018-network-of-learning",
+    "kind": "related"
+  },
+  {
+    "from": "u-well-defined-edges",
+    "to": "013-subculture-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-well-defined-edges",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-cultural-nodes",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-cultural-nodes",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-movable-seating",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-sunlit-spaces",
+    "to": "161-sunny-place",
+    "kind": "related"
+  },
+  {
+    "from": "u-sunlit-spaces",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-water-features-in-plazas",
+    "to": "252-pools-of-light",
+    "kind": "related"
+  },
+  {
+    "from": "u-food-as-urban-magnet",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-food-as-urban-magnet",
+    "to": "046-market-of-many-shops",
+    "kind": "related"
+  },
+  {
+    "from": "u-trees-for-comfort-and-aesthetic",
+    "to": "051-green-streets",
+    "kind": "related"
+  },
+  {
+    "from": "u-presence-of-other-people",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-multiple-levels-of-seating",
+    "to": "185-sitting-circle",
+    "kind": "related"
+  },
+  {
+    "from": "u-visual-connections-to-the-street",
+    "to": "031-promenade",
+    "kind": "related"
+  },
+  {
+    "from": "u-proximity-to-pedestrian-flows",
+    "to": "053-main-gateways",
+    "kind": "related"
+  },
+  {
+    "from": "u-proximity-to-pedestrian-flows",
+    "to": "100-pedestrian-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrated-street-furniture",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-interactivity-in-public-spaces",
+    "to": "073-adventure-playground",
+    "kind": "related"
+  },
+  {
+    "from": "u-comfortable-places-to-sit",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-comfortable-places-to-sit",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-inviting-ground-level-activities",
+    "to": "032-shopping-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-engaging-edges",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-soft-edges-and-transitions",
+    "to": "u-transition-zones",
+    "kind": "related"
+  },
+  {
+    "from": "u-soft-edges-and-transitions",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-adaptable-public-spaces",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-adaptable-public-spaces",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-integrate-natural-elements",
+    "to": "051-green-streets",
+    "kind": "related"
+  },
+  {
+    "from": "u-observation-and-participation-opportunities",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-observation-and-participation-opportunities",
+    "to": "088-street-cafe",
+    "kind": "related"
+  },
+  {
+    "from": "u-seasonal-design-variability",
+    "to": "072-local-sports",
+    "kind": "related"
+  },
+  {
+    "from": "u-seasonal-design-variability",
+    "to": "163-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-variety-in-public-space",
+    "to": "061-small-public-squares",
+    "kind": "related"
+  },
+  {
+    "from": "u-variety-in-public-space",
+    "to": "030-activity-nodes",
+    "kind": "related"
+  },
+  {
+    "from": "u-respect-for-historical-context",
+    "to": "040-old-people-everywhere",
+    "kind": "related"
+  },
+  {
+    "from": "u-respect-for-historical-context",
+    "to": "058-carnival",
+    "kind": "related"
+  },
+  {
+    "from": "u-design-for-weather-protection",
+    "to": "119-arcades",
+    "kind": "related"
+  },
+  {
+    "from": "u-design-for-weather-protection",
+    "to": "100-pedestrian-street",
+    "kind": "related"
+  }
+]
