@@ -33,6 +33,7 @@
   --color-danger: var(--danger);
   --font-sans: var(--font-din), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-din-mono), "SF Mono", monospace;
+  --font-display: var(--font-garamond), "EB Garamond", Georgia, serif;
 }
 
 html,
@@ -50,18 +51,35 @@ body {
   color: var(--text-body);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-primary);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-family: var(--font-garamond), "EB Garamond", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   line-height: 1.15;
 }
-h1 { font-size: 32px; }
-h2 { font-size: 24px; }
-h3 { font-size: 18px; }
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--accent-hover); }
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
 
 .card {
   background: #fff;
@@ -84,8 +102,14 @@ a:hover { color: var(--accent-hover); }
   cursor: pointer;
   border: 0;
 }
-.btn-primary:hover { background: var(--accent-hover); color: #fff; }
-.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 .btn-secondary {
   background: #fff;
@@ -101,7 +125,10 @@ a:hover { color: var(--accent-hover); }
   gap: 8px;
   cursor: pointer;
 }
-.btn-secondary:hover { background: var(--surface); color: var(--text-primary); }
+.btn-secondary:hover {
+  background: var(--surface);
+  color: var(--text-primary);
+}
 
 .tag {
   background: var(--accent-light);
@@ -127,4 +154,6 @@ a:hover { color: var(--accent-hover); }
   outline: none;
   transition: border-color 120ms ease;
 }
-.input:focus { border-color: var(--accent); }
+.input:focus {
+  border-color: var(--accent);
+}
