@@ -23,7 +23,7 @@ export default async function AdminHome() {
             </div>
             <h1 className="tracking-tight">Pattern Studio</h1>
           </div>
-          <Link href="/explore" className="btn-secondary">
+          <Link href="/" className="btn-secondary">
             ← Back to graph
           </Link>
         </div>

@@ -58,12 +58,15 @@ export default function ExploreClient({
     <div className="fixed inset-0 bg-[color:var(--surface)]">
       {/* Top bar */}
       <div className="absolute top-0 left-0 right-0 z-30 flex items-center gap-4 px-6 py-4 pointer-events-none">
-        <Link
-          href="/"
-          className="pointer-events-auto flex items-center gap-2 text-[color:var(--text-primary)] hover:text-[color:var(--accent)] !text-[color:var(--text-primary)] hover:!text-[color:var(--accent)]"
-        >
+        <div className="pointer-events-auto flex items-center gap-2 text-[color:var(--text-primary)]">
           <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
           <span className="font-medium text-[14px]">A Pattern Language</span>
+        </div>
+        <Link
+          href="/about"
+          className="pointer-events-auto text-[13px] !text-[color:var(--text-secondary)] hover:!text-[color:var(--text-primary)]"
+        >
+          What is this?
         </Link>
 
         <div className="pointer-events-auto ml-6 flex-1 max-w-md">
@@ -71,7 +74,7 @@ export default function ExploreClient({
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search 253 patterns…"
+              placeholder={`Search ${patterns.length} patterns…`}
               className="input !bg-white/90 backdrop-blur"
               style={{ paddingLeft: 36 }}
             />

@@ -39,7 +39,7 @@ export default async function PatternPage({
             <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
             <span className="font-medium text-[14px]">A Pattern Language</span>
           </Link>
-          <Link href="/explore" className="btn-secondary">
+          <Link href="/" className="btn-secondary">
             Open in graph →
           </Link>
         </div>

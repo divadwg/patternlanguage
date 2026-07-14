@@ -73,11 +73,15 @@ export default function PatternGraph({
     return { nodes, links, degree };
   }, [patterns, connections]);
 
-  // Center/zoom to fit once when data loads.
+  // Center on the graph once when data loads, then zoom in past the
+  // label threshold (1.6) so pattern names are readable by default.
   useEffect(() => {
     if (!fgRef.current) return;
     const t = setTimeout(() => {
-      fgRef.current?.zoomToFit(600, 80);
+      const fg = fgRef.current;
+      if (!fg) return;
+      fg.zoomToFit(0, 80);
+      fg.zoom(Math.max(fg.zoom(), 2), 800);
     }, 400);
     return () => clearTimeout(t);
   }, [nodes.length]);
