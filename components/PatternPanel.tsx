@@ -74,7 +74,7 @@ export default function PatternPanel({
 
   return (
     <aside
-      className="fixed right-0 top-0 h-full w-full sm:w-[440px] bg-white border-l border-[color:var(--border)] shadow-[0_0_40px_rgba(0,0,0,0.06)] z-20 overflow-y-auto"
+      className="fixed right-0 top-0 h-full w-full sm:w-[440px] bg-white border-l border-[color:var(--border)] shadow-[0_0_40px_rgba(0,0,0,0.06)] z-40 overflow-y-auto"
       style={{ animation: "slideIn 240ms ease" }}
     >
       <style>{`
@@ -84,7 +84,13 @@ export default function PatternPanel({
         }
       `}</style>
 
-      <div className="px-7 pt-6 pb-4 border-b border-[color:var(--border)] sticky top-0 bg-white z-10">
+      <div className="px-5 sm:px-7 pt-4 sm:pt-6 pb-4 border-b border-[color:var(--border)] sticky top-0 bg-white z-10">
+        <button
+          onClick={onClose}
+          className="sm:hidden flex items-center gap-1.5 text-[14px] font-medium text-[color:var(--text-secondary)] mb-4 -ml-1 py-1 pr-3"
+        >
+          ‹ Back to list
+        </button>
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-2">
             <span
@@ -101,7 +107,7 @@ export default function PatternPanel({
           </div>
           <button
             onClick={onClose}
-            className="text-[color:var(--text-muted)] hover:text-[color:var(--text-primary)] text-lg leading-none -mt-1"
+            className="hidden sm:block text-[color:var(--text-muted)] hover:text-[color:var(--text-primary)] text-xl leading-none -mt-1 p-1 -m-1"
             aria-label="Close"
           >
             ×
@@ -127,7 +133,7 @@ export default function PatternPanel({
         ) : null}
       </div>
 
-      <div className="px-7 py-6 space-y-6">
+      <div className="px-5 sm:px-7 py-6 space-y-6">
         <Section label="Summary">
           <p className="text-[color:var(--text-body)] leading-relaxed" style={{ fontSize: 15 }}>
             {pattern.summary}

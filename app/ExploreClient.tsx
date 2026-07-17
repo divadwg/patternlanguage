@@ -128,42 +128,46 @@ export default function ExploreClient({
   return (
     <div className="fixed inset-0 bg-[color:var(--surface)]">
       {/* Top bar */}
-      <div className="absolute top-0 left-0 right-0 z-30 flex items-center md:justify-center gap-3 md:gap-4 px-4 md:px-6 py-3 md:py-4 pointer-events-none">
-        <div className="pointer-events-auto flex items-center gap-2 text-[color:var(--text-primary)] flex-shrink-0">
-          <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
-          <span className="font-medium text-[14px] whitespace-nowrap">
-            A Pattern Language
-          </span>
-        </div>
-
-        {/* Desktop controls */}
-        <div className="hidden md:flex items-center gap-4">
-          <div className="pointer-events-auto">{viewToggle}</div>
-          <Link
-            href="/about"
-            className="pointer-events-auto text-[13px] whitespace-nowrap !text-[color:var(--text-secondary)] hover:!text-[color:var(--text-primary)]"
-          >
-            What is this?
-          </Link>
-          <div className="pointer-events-auto ml-2 w-[340px]">{searchBox}</div>
-        </div>
-        {process.env.NODE_ENV === "development" ? (
-          <div className="pointer-events-auto hidden md:block absolute right-6 top-1/2 -translate-y-1/2">
-            <Link href="/admin" className="btn-primary">
-              Admin
-            </Link>
+      <div className="absolute top-0 left-0 right-0 z-30 px-4 md:px-6 py-3 md:py-4 pointer-events-none">
+        {/* Constrain to the same 980px column as the list so the bar and
+            content share edges instead of floating independently. */}
+        <div className="flex items-center gap-3 md:gap-4 md:max-w-[980px] md:mx-auto">
+          <div className="pointer-events-auto flex items-center gap-2 text-[color:var(--text-primary)] flex-shrink-0">
+            <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
+            <span className="font-medium text-[14px] whitespace-nowrap">
+              A Pattern Language
+            </span>
           </div>
-        ) : null}
 
-        {/* Mobile: hamburger */}
-        <button
-          onClick={() => setMenuOpen((o) => !o)}
-          aria-label="Menu"
-          aria-expanded={menuOpen}
-          className="pointer-events-auto md:hidden ml-auto flex items-center justify-center w-9 h-9 rounded-md border border-[color:var(--border)] bg-white/90 backdrop-blur text-[color:var(--text-primary)]"
-        >
-          {menuOpen ? "✕" : "☰"}
-        </button>
+          {/* Desktop controls */}
+          <div className="hidden md:flex items-center gap-4 flex-1">
+            <div className="pointer-events-auto">{viewToggle}</div>
+            <Link
+              href="/about"
+              className="pointer-events-auto text-[13px] whitespace-nowrap !text-[color:var(--text-secondary)] hover:!text-[color:var(--text-primary)]"
+            >
+              What is this?
+            </Link>
+            <div className="pointer-events-auto flex-1">{searchBox}</div>
+          </div>
+          {process.env.NODE_ENV === "development" ? (
+            <div className="pointer-events-auto hidden md:block absolute right-6 top-1/2 -translate-y-1/2">
+              <Link href="/admin" className="btn-primary">
+                Admin
+              </Link>
+            </div>
+          ) : null}
+
+          {/* Mobile: hamburger */}
+          <button
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+            className="pointer-events-auto md:hidden ml-auto flex items-center justify-center w-9 h-9 rounded-md border border-[color:var(--border)] bg-white/90 backdrop-blur text-[color:var(--text-primary)]"
+          >
+            {menuOpen ? "✕" : "☰"}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu panel */}

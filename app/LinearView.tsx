@@ -148,7 +148,38 @@ export default function LinearView({
     [edges, svgH, gutterW],
   );
 
-  const activeId = hoverId ?? selectedId;
+  // No hover on touch: on narrow screens the row passing the middle of the
+  // viewport becomes the focus, so its arcs light up as you scroll.
+  const isNarrow = gutterW < 100;
+  const [scrollFocusId, setScrollFocusId] = useState<string | null>(null);
+  useEffect(() => {
+    if (!isNarrow) {
+      setScrollFocusId(null);
+      return;
+    }
+    const el = scrollRef.current;
+    if (!el) return;
+    let raf = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const centerY = el.scrollTop + el.clientHeight / 2 - TOP_PAD;
+        const idx = Math.max(
+          0,
+          Math.min(rows.length - 1, Math.floor(centerY / ROW_H)),
+        );
+        setScrollFocusId(rows[idx]?.id ?? null);
+      });
+    };
+    onScroll();
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener("scroll", onScroll);
+    };
+  }, [isNarrow, rows]);
+
+  const activeId = hoverId ?? selectedId ?? scrollFocusId;
   const activeEdges = activeId
     ? edges.filter((e) => e.from === activeId || e.to === activeId)
     : [];
@@ -219,11 +250,13 @@ export default function LinearView({
                     opacity: dim ? 0.3 : 1,
                     background: isSel
                       ? "var(--accent-light)"
-                      : isNeighbor
-                        ? "var(--surface)"
-                        : isHi
-                          ? "var(--accent-light)"
-                          : "transparent",
+                      : isHi
+                        ? "var(--accent-light)"
+                        : p.id === activeId
+                          ? "var(--surface-raised)"
+                          : isNeighbor
+                            ? "var(--surface)"
+                            : "transparent",
                   }}
                 >
                   <span className="font-mono text-[11px] text-[color:var(--text-muted)] w-6 md:w-8 text-right flex-shrink-0">
