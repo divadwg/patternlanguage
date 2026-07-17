@@ -2098,5 +2098,113 @@
     "solution": "Design pathways and outdoor areas with protection from wind, rain, and sun to encourage year-round use.",
     "thinkerId": "jan-gehl",
     "createdAt": "2026-04-15T12:36:09.927Z"
+  },
+  {
+    "id": "01e4e1c3-f27e-4ce5-9a8d-c97f071baac6",
+    "slug": "u-street-vendor-markets",
+    "title": "Street Vendor Markets",
+    "scale": "town",
+    "summary": "Designate and support spaces for street vendors to contribute to urban life and economy.",
+    "context": "Areas with informal economies and high unemployment.",
+    "problem": "Strict regulations and lack of designated spaces push street vendors into conflict with authorities and limit livelihood opportunities.",
+    "solution": "Create designated markets or zones that legalize and support street vending while ensuring safe and accessible environments.",
+    "thinkerId": "mike-davis",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "237a181e-5661-46bb-a962-a2afaacfd61d",
+    "slug": "u-urban-green-corridors",
+    "title": "Urban Green Corridors",
+    "scale": "town",
+    "summary": "Integrate green corridors within urban landscapes to enhance biodiversity and provide community spaces.",
+    "context": "Cities lacking natural green spaces and facing environmental degradation.",
+    "problem": "Urban expansion often leads to a lack of biodiversity and community engagement with nature, exacerbating environmental issues.",
+    "solution": "Design and integrate interconnected green corridors that restore ecosystems and offer recreational space for residents.",
+    "thinkerId": "mike-davis",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "a4aeba7c-f664-464d-99c5-a48ef3ddb36e",
+    "slug": "u-privatized-public-space",
+    "title": "Privatized Public Space",
+    "scale": "town",
+    "summary": "Privatization of public spaces limits access and diversity, turning cities into exclusive enclaves.",
+    "context": "Cities where public spaces are controlled by private entities for profit or exclusion.",
+    "problem": "Public spaces lose their function as inclusive social areas when privately controlled, often excluding certain groups.",
+    "solution": "Ensure public spaces remain publicly owned and managed to serve all demographics.",
+    "thinkerId": "mike-davis",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "b4db646a-ed49-450b-8565-866db033613c",
+    "slug": "u-freeway-centric-development",
+    "title": "Freeway-Centric Development",
+    "scale": "town",
+    "summary": "Suburban office-retail agglomerations grow around freeway interchanges, creating Edge Cities with their own economy and culture.",
+    "context": "Suburban regions experiencing growth around major highways and freeway interchanges.",
+    "problem": "Traditional cities cannot accommodate the decentralized business and retail needs of suburban populations, leading to development at freeway interchanges.",
+    "solution": "Plan for office and retail agglomerations at suburban freeway nodes, creating new Edge Cities with their own infrastructure and rules.",
+    "thinkerId": "joel-garreau",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "5984fef3-b5a0-4b66-9ae3-28e1928b6490",
+    "slug": "u-parking-accommodates-density",
+    "title": "Parking Accommodates Density",
+    "scale": "town",
+    "summary": "Provisions for extensive parking are necessary for the dense development of Edge Cities.",
+    "context": "Areas developing into Edge Cities with high-density office and retail space.",
+    "problem": "High-density development introduces parking challenges that traditional urban centers are not equipped to handle.",
+    "solution": "Design Edge Cities with multi-story parking structures and expansive surface lots to accommodate cars and support dense urban growth.",
+    "thinkerId": "joel-garreau",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "f6783a97-3eea-40c8-90c0-b0ffb92d6eeb",
+    "slug": "u-retail-characterized-by-hyper-mart-culture",
+    "title": "Retail Characterized by Hyper-Mart Culture",
+    "scale": "town",
+    "summary": "Edge Cities feature a retail culture dominated by large hypermarkets catering to an auto-dependent population.",
+    "context": "Commercial centers within Edge Cities aiming to attract suburban shoppers.",
+    "problem": "Traditional small-scale retail is insufficient in attracting suburban populations who prefer convenience and variety in one place.",
+    "solution": "Develop large-scale retail centers or hypermarts that offer a wide range of goods and ample parking for suburban clientele.",
+    "thinkerId": "joel-garreau",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "511e03fa-cf39-4ef4-9ac4-0c7e6a55354b",
+    "slug": "u-lack-of-public-space-maturity",
+    "title": "Lack of Public Space Maturity",
+    "scale": "town",
+    "summary": "Edge Cities often struggle to develop public spaces that foster a sense of community and place.",
+    "context": "Newly developed Edge Cities seeking to create community-focused amenities.",
+    "problem": "The car-centric design of Edge Cities leaves little room or priority for public spaces that encourage community interaction.",
+    "solution": "Incorporate parks, squares, and pedestrian-friendly zones into Edge City planning to encourage public life and community building.",
+    "thinkerId": "joel-garreau",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "c9d526dc-98d8-461c-91ca-2312744ddf52",
+    "slug": "u-corporate-enclaves",
+    "title": "Corporate Enclaves",
+    "scale": "town",
+    "summary": "Edge Cities function as enclaves of corporate office space, separate from traditional residential neighborhoods.",
+    "context": "Business districts emerging in suburban areas near freeway interchanges.",
+    "problem": "Traditional business districts are ill-suited for suburban populations that drive to work, leading to decentralized office agglomerations.",
+    "solution": "Develop business-focused Edge Cities with centralized corporate office spaces accessible by major highways.",
+    "thinkerId": "joel-garreau",
+    "createdAt": "2026-07-17T16:50:51.920Z"
+  },
+  {
+    "id": "779a7014-4cdc-4bb3-9137-a36380ebc1f1",
+    "slug": "u-edge-cities-as-transit-hubs",
+    "title": "Edge Cities as Transit Hubs",
+    "scale": "town",
+    "summary": "Edge Cities serve as hubs for suburban transit, facilitating the movement of people and goods.",
+    "context": "Growing transportation networks in suburban areas around Edge Cities.",
+    "problem": "Suburban areas traditionally lack the infrastructure to serve as major transit nodes, leading to traffic congestion and inefficiency.",
+    "solution": "Design Edge Cities with significant transportation infrastructure, including highways and transit options, to support their role as regional hubs.",
+    "thinkerId": "joel-garreau",
+    "createdAt": "2026-07-17T16:50:51.920Z"
   }
 ]

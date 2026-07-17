@@ -1453,5 +1453,55 @@
     "from": "u-design-for-weather-protection",
     "to": "100-pedestrian-street",
     "kind": "related"
+  },
+  {
+    "from": "u-street-vendor-markets",
+    "to": "015-neighborhood-boundary",
+    "kind": "related"
+  },
+  {
+    "from": "u-street-vendor-markets",
+    "to": "032-shopping-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-urban-green-corridors",
+    "to": "051-green-streets",
+    "kind": "related"
+  },
+  {
+    "from": "u-privatized-public-space",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-privatized-public-space",
+    "to": "060-accessible-green",
+    "kind": "related"
+  },
+  {
+    "from": "u-freeway-centric-development",
+    "to": "016-web-of-public-transportation",
+    "kind": "related"
+  },
+  {
+    "from": "u-retail-characterized-by-hyper-mart-culture",
+    "to": "032-shopping-street",
+    "kind": "related"
+  },
+  {
+    "from": "u-retail-characterized-by-hyper-mart-culture",
+    "to": "087-individually-owned-shops",
+    "kind": "related"
+  },
+  {
+    "from": "u-lack-of-public-space-maturity",
+    "to": "069-public-outdoor-room",
+    "kind": "related"
+  },
+  {
+    "from": "u-corporate-enclaves",
+    "to": "082-office-connections",
+    "kind": "related"
   }
 ]
