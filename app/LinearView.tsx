@@ -204,8 +204,18 @@ export default function LinearView({
       onClick={() => onSelect(null)}
     >
       <div
-        className="relative mx-auto"
-        style={{ maxWidth: 980, paddingTop: TOP_PAD, paddingBottom: 60 }}
+        className="relative"
+        style={{
+          maxWidth: 980,
+          // Center the visible row block (column minus the arc gutter), letting
+          // the gutter hang to its left; clamp so it never leaves the screen.
+          marginLeft: isNarrow
+            ? "auto"
+            : `max(0px, calc(50% - ${(980 - gutterW) / 2 + gutterW}px))`,
+          marginRight: isNarrow ? "auto" : undefined,
+          paddingTop: TOP_PAD,
+          paddingBottom: 60,
+        }}
       >
         <div className="relative" style={{ height: svgH }}>
           {staticArcs}

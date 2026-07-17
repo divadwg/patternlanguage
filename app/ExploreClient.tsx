@@ -128,10 +128,11 @@ export default function ExploreClient({
   return (
     <div className="fixed inset-0 bg-[color:var(--surface)]">
       {/* Top bar */}
-      <div className="absolute top-0 left-0 right-0 z-30 px-4 md:px-6 py-3 md:py-4 pointer-events-none">
-        {/* Constrain to the same 980px column as the list so the bar and
-            content share edges instead of floating independently. */}
-        <div className="flex items-center gap-3 md:gap-4 md:max-w-[980px] md:mx-auto">
+      <div className="absolute top-0 left-0 right-0 z-30 px-4 md:px-0 py-3 md:py-4 pointer-events-none">
+        {/* Mirror the list column: 980px wide with the visible row block
+            (column minus 240px arc gutter) centered in the viewport, then
+            indented past the gutter so the bar spans exactly the row area. */}
+        <div className="flex items-center gap-3 md:gap-4 md:max-w-[980px] md:ml-[max(0px,calc(50%-610px))] md:pl-[240px]">
           <div className="pointer-events-auto flex items-center gap-2 text-[color:var(--text-primary)] flex-shrink-0">
             <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
             <span className="font-medium text-[14px] whitespace-nowrap">
