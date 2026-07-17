@@ -15,7 +15,6 @@ import type { Pattern, Connection } from "@/lib/types";
 import { colorForPattern, sourceNameForPattern } from "@/lib/palette";
 
 const ROW_H = 44;
-const GUTTER_W = 240;
 const TOP_PAD = 76; // clearance for the floating top bar
 
 export default function LinearView({
@@ -35,6 +34,18 @@ export default function LinearView({
 }) {
   const [hoverId, setHoverId] = useState<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Narrow screens get a slimmer arc gutter so rows keep a readable measure.
+  const [gutterW, setGutterW] = useState(240);
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => {
+      setGutterW(el.clientWidth < 640 ? 56 : 240);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const { rows, indexOf, edges, adjacency } = useMemo(() => {
     const byId = new Map(patterns.map((p) => [p.id, p]));
@@ -107,9 +118,9 @@ export default function LinearView({
   const arcPath = (a: number, b: number) => {
     const y1 = yAt(a);
     const y2 = yAt(b);
-    const depth = 14 + Math.sqrt((b - a) / maxSpan) * (GUTTER_W - 34);
-    const cx = GUTTER_W - depth;
-    return `M ${GUTTER_W} ${y1} C ${cx} ${y1} ${cx} ${y2} ${GUTTER_W} ${y2}`;
+    const depth = 10 + Math.sqrt((b - a) / maxSpan) * (gutterW - 24);
+    const cx = gutterW - depth;
+    return `M ${gutterW} ${y1} C ${cx} ${y1} ${cx} ${y2} ${gutterW} ${y2}`;
   };
 
   const svgH = rows.length * ROW_H;
@@ -118,7 +129,7 @@ export default function LinearView({
   const staticArcs = useMemo(
     () => (
       <svg
-        width={GUTTER_W}
+        width={gutterW}
         height={svgH}
         className="absolute left-0 top-0 pointer-events-none"
       >
@@ -134,7 +145,7 @@ export default function LinearView({
       </svg>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [edges, svgH],
+    [edges, svgH, gutterW],
   );
 
   const activeId = hoverId ?? selectedId;
@@ -169,7 +180,7 @@ export default function LinearView({
           {staticArcs}
           {/* Active layer: arcs for the hovered / selected pattern. */}
           <svg
-            width={GUTTER_W}
+            width={gutterW}
             height={svgH}
             className="absolute left-0 top-0 pointer-events-none"
           >
@@ -181,13 +192,13 @@ export default function LinearView({
                   stroke="var(--accent)"
                   strokeWidth={1.6}
                 />
-                <circle cx={GUTTER_W} cy={yAt(e.a)} r={3} fill="var(--accent)" />
-                <circle cx={GUTTER_W} cy={yAt(e.b)} r={3} fill="var(--accent)" />
+                <circle cx={gutterW} cy={yAt(e.a)} r={3} fill="var(--accent)" />
+                <circle cx={gutterW} cy={yAt(e.b)} r={3} fill="var(--accent)" />
               </g>
             ))}
           </svg>
 
-          <div className="absolute top-0 right-0" style={{ left: GUTTER_W }}>
+          <div className="absolute top-0 right-0" style={{ left: gutterW }}>
             {rows.map((p, i) => {
               const isSel = p.id === selectedId;
               const isNeighbor = activeId !== null && neighborIds.has(p.id);
@@ -215,7 +226,7 @@ export default function LinearView({
                           : "transparent",
                   }}
                 >
-                  <span className="font-mono text-[11px] text-[color:var(--text-muted)] w-8 text-right flex-shrink-0">
+                  <span className="font-mono text-[11px] text-[color:var(--text-muted)] w-6 md:w-8 text-right flex-shrink-0">
                     {p.number ?? "•"}
                   </span>
                   <span
@@ -223,7 +234,7 @@ export default function LinearView({
                     style={{ background: colorForPattern(p) }}
                     title={sourceNameForPattern(p) ?? "User-added"}
                   />
-                  <span className="font-medium text-[14px] text-[color:var(--text-primary)] flex-shrink-0">
+                  <span className="font-medium text-[14px] text-[color:var(--text-primary)] truncate min-w-0 md:flex-shrink-0">
                     {p.title}
                   </span>
                   <span className="text-[12px] text-[color:var(--text-secondary)] truncate hidden md:inline">

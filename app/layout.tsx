@@ -22,9 +22,9 @@ const garamond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: 'A Pattern Language',
+  title: 'A Pattern Language — a universal map of urban patterns',
   description:
-    "A modern, graph-based reimagining of Christopher Alexander's pattern language — explore 253 canonical patterns and add your own.",
+    "Christopher Alexander's 253 patterns joined by patterns extracted from Jane Jacobs, Jan Gehl, Kevin Lynch, William Whyte and other urban theorists — one connected, browsable map of how places work.",
 };
 
 export default function RootLayout({
