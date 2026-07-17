@@ -73,18 +73,27 @@ export default function PatternGraph({
     return { nodes, links, degree };
   }, [patterns, connections]);
 
-  // Center on the graph once when data loads, then zoom in past the
-  // label threshold (1.6) so pattern names are readable by default.
+  // Center once when data loads, then zoom in past the label threshold
+  // (1.6) so pattern names are readable by default. If a node is already
+  // selected (deep link ?p=…), center on it instead of the graph middle.
+  const selectedRef = useRef(selectedId);
+  selectedRef.current = selectedId;
   useEffect(() => {
     if (!fgRef.current) return;
     const t = setTimeout(() => {
       const fg = fgRef.current;
       if (!fg) return;
-      fg.zoomToFit(0, 80);
-      fg.zoom(Math.max(fg.zoom(), 2), 800);
+      const sel = nodes.find((n) => n.id === selectedRef.current);
+      if (sel && sel.x !== undefined && sel.y !== undefined) {
+        fg.centerAt(sel.x, sel.y, 0);
+        fg.zoom(3, 800);
+      } else {
+        fg.zoomToFit(0, 80);
+        fg.zoom(Math.max(fg.zoom(), 2), 800);
+      }
     }, 400);
     return () => clearTimeout(t);
-  }, [nodes.length]);
+  }, [nodes]);
 
   // Focus on a selected node. The force-graph mutates our `nodes` array
   // in place with x/y coordinates, so we read from it directly.

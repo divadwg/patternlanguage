@@ -11,13 +11,15 @@ import { colorForPattern, sourceNameForPattern } from "@/lib/palette";
 export default function ExploreClient({
   initialPatterns,
   initialConnections,
+  initialSelectedId = null,
 }: {
   initialPatterns: Pattern[];
   initialConnections: Connection[];
+  initialSelectedId?: string | null;
 }) {
   const [patterns] = useState(initialPatterns);
   const [connections] = useState(initialConnections);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId);
   const [query, setQuery] = useState("");
 
   const fuse = useMemo(
@@ -62,6 +64,12 @@ export default function ExploreClient({
           <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
           <span className="font-medium text-[14px]">A Pattern Language</span>
         </div>
+        <Link
+          href="/patterns"
+          className="pointer-events-auto text-[13px] !text-[color:var(--text-secondary)] hover:!text-[color:var(--text-primary)]"
+        >
+          Index
+        </Link>
         <Link
           href="/about"
           className="pointer-events-auto text-[13px] !text-[color:var(--text-secondary)] hover:!text-[color:var(--text-primary)]"

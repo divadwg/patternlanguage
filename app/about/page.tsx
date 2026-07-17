@@ -135,6 +135,11 @@ export default function AboutPage() {
               bar at the top; matching patterns light up in the graph.
             </li>
             <li>
+              <strong>Prefer a list?</strong> The{" "}
+              <Link href="/patterns">pattern index</Link> shows every pattern
+              grouped by source, filterable by scale.
+            </li>
+            <li>
               <strong>Node size</strong> reflects how connected a pattern is;{" "}
               <strong>color</strong> shows its source — Alexander's originals,
               each theorist, and user-added patterns each get their own color,

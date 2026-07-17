@@ -39,9 +39,14 @@ export default async function PatternPage({
             <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
             <span className="font-medium text-[14px]">A Pattern Language</span>
           </Link>
-          <Link href="/" className="btn-secondary">
-            Open in graph →
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link href="/patterns" className="btn-secondary">
+              Index
+            </Link>
+            <Link href={`/?p=${pattern.id}`} className="btn-secondary">
+              Open in graph →
+            </Link>
+          </div>
         </div>
       </header>
 
