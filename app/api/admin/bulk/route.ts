@@ -8,6 +8,7 @@ import {
   writeUserPatterns,
   readUserConnections,
   writeUserConnections,
+  recordRejected,
   userSlug,
   type UserPattern,
 } from "@/lib/admin/storage";
@@ -45,6 +46,7 @@ export async function POST(req: Request) {
   const remaining = queue.filter((q) => !idSet.has(q.id));
 
   if (body.action === "reject") {
+    await recordRejected(targets);
     await writeQueue(remaining);
     return NextResponse.json({ approved: 0, rejected: targets.length });
   }

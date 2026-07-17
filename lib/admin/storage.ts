@@ -97,6 +97,35 @@ export async function addToQueue(items: QueueItem[]): Promise<void> {
   await writeQueue([...items, ...current]);
 }
 
+// ── Rejected titles ────────────────────────────────────────────────────
+// Ledger of rejected candidate titles so re-discovery passes exclude them
+// instead of regenerating the same candidates.
+export interface RejectedEntry {
+  title: string;
+  thinkerId?: string;
+  topic?: string;
+  rejectedAt: string;
+}
+
+const REJECTED_FILE = path.join(DATA_DIR, "rejected-titles.json");
+
+export async function readRejected(): Promise<RejectedEntry[]> {
+  return readJson<RejectedEntry[]>(REJECTED_FILE, []);
+}
+
+export async function recordRejected(items: QueueItem[]): Promise<void> {
+  if (items.length === 0) return;
+  const current = await readRejected();
+  const now = new Date().toISOString();
+  const additions = items.map((q) => ({
+    title: q.candidate.title,
+    thinkerId: q.source.thinkerId,
+    topic: q.source.topic,
+    rejectedAt: now,
+  }));
+  await writeJson(REJECTED_FILE, [...current, ...additions]);
+}
+
 // ── Sources ────────────────────────────────────────────────────────────
 export interface Source {
   id: string;

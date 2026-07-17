@@ -10,6 +10,7 @@ import {
   addToQueue,
   readQueue,
   readUserPatterns,
+  readRejected,
   type QueueItem,
 } from "@/lib/admin/storage";
 
@@ -17,14 +18,16 @@ export const runtime = "nodejs";
 export const maxDuration = 300;
 
 /**
- * Collect all titles already attributed to this thinker (in the pending queue
- * AND in already-approved user-patterns.json) so the next extraction pass can
- * exclude them and Claude has to find additional patterns.
+ * Collect all titles already attributed to this thinker (in the pending queue,
+ * in already-approved user-patterns.json, AND in the rejected-titles ledger)
+ * so the next extraction pass can exclude them and Claude has to find
+ * additional patterns.
  */
 async function titlesSeenForThinker(thinkerId: string): Promise<string[]> {
-  const [queue, userPatterns] = await Promise.all([
+  const [queue, userPatterns, rejected] = await Promise.all([
     readQueue(),
     readUserPatterns(),
+    readRejected(),
   ]);
   const titles = new Set<string>();
   for (const q of queue) {
@@ -32,6 +35,9 @@ async function titlesSeenForThinker(thinkerId: string): Promise<string[]> {
   }
   for (const p of userPatterns) {
     if (p.thinkerId === thinkerId) titles.add(p.title);
+  }
+  for (const r of rejected) {
+    if (r.thinkerId === thinkerId) titles.add(r.title);
   }
   return Array.from(titles);
 }

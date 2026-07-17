@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireDev } from "@/lib/admin/guard";
-import { readQueue, writeQueue } from "@/lib/admin/storage";
+import { readQueue, writeQueue, recordRejected } from "@/lib/admin/storage";
 
 export const runtime = "nodejs";
 
@@ -11,10 +11,11 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Missing id" }, { status: 400 });
   }
   const queue = await readQueue();
-  const next = queue.filter((q) => q.id !== body.id);
-  if (next.length === queue.length) {
+  const target = queue.find((q) => q.id === body.id);
+  if (!target) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
-  await writeQueue(next);
+  await recordRejected([target]);
+  await writeQueue(queue.filter((q) => q.id !== body.id));
   return NextResponse.json({ ok: true });
 }

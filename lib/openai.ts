@@ -32,6 +32,7 @@ Good patterns:
   - Are stated in universal, imperative voice ("Do X so that Y").
   - Have a specific solution — not a vague aspiration.
   - Name a single problem, not a whole area of concern.
+  - Are named for the solution, not the diagnosis. A critique of the built world ("hostile architecture", "privatized public space") only becomes a pattern when it carries a concrete antidote — a specific, buildable counter-move. State the pattern as that antidote and title it accordingly. If the only remedy you can state is a policy platitude ("promote equity", "enforce regulations", "adopt inclusive principles"), the candidate is a diagnosis, not a pattern — discard it.
   - Could plausibly be mentioned in the same breath as a canonical Alexander pattern like "Light on Two Sides of Every Room" or "Four-Story Limit".
 
 When you read a source text, extract 0 to many pattern candidates that plausibly meet this bar. Prefer rejecting over inventing — it is better to extract one strong pattern than five weak ones. If the source contains no real patterns, return an empty list.

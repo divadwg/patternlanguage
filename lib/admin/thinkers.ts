@@ -158,6 +158,22 @@ export const THINKERS: Thinker[] = [
       "Long-view historian of the city. Examined how the form of settlement has tracked the form of civilization — monastery, medieval town, baroque capital, industrial slum, megalopolis.",
   },
   {
+    id: "joel-garreau",
+    name: "Joel Garreau",
+    years: "1948–",
+    works: ["Edge City: Life on the New Frontier", "The Nine Nations of North America"],
+    blurb:
+      "Named and mapped the Edge City — the office-retail agglomerations that grew up at suburban freeway interchanges. Documented their unwritten rules of parking, density, and development, and asked whether they can ever mature into real places.",
+  },
+  {
+    id: "mike-davis",
+    name: "Mike Davis",
+    years: "1946–2022",
+    works: ["City of Quartz", "Ecology of Fear", "Planet of Slums"],
+    blurb:
+      "Radical historian of Los Angeles. Anatomized the fortress city — gated enclaves, privatized public space, bum-proof benches, and the militarization of policing — and how fear, real estate, and power shape urban form.",
+  },
+  {
     id: "fred-kent-pps",
     name: "Fred Kent & Project for Public Spaces",
     works: ["How to Turn a Place Around"],
