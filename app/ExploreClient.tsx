@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import Fuse from "fuse.js";
 import PatternGraph from "./PatternGraph";
+import LinearView from "./LinearView";
 import PatternPanel from "@/components/PatternPanel";
 import type { Pattern, Connection } from "@/lib/types";
 import { colorForPattern, sourceNameForPattern } from "@/lib/palette";
@@ -21,6 +22,7 @@ export default function ExploreClient({
   const [connections] = useState(initialConnections);
   const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId);
   const [query, setQuery] = useState("");
+  const [view, setView] = useState<"graph" | "linear">("graph");
 
   const fuse = useMemo(
     () =>
@@ -64,12 +66,26 @@ export default function ExploreClient({
           <span className="w-5 h-5 rounded-full bg-[color:var(--accent)] inline-block" />
           <span className="font-medium text-[14px]">A Pattern Language</span>
         </div>
-        <Link
-          href="/patterns"
-          className="pointer-events-auto text-[13px] !text-[color:var(--text-secondary)] hover:!text-[color:var(--text-primary)]"
-        >
-          Index
-        </Link>
+        <div className="pointer-events-auto flex items-center rounded-md border border-[color:var(--border)] bg-white/90 backdrop-blur overflow-hidden">
+          {(
+            [
+              ["graph", "Graph"],
+              ["linear", "List"],
+            ] as const
+          ).map(([v, label]) => (
+            <button
+              key={v}
+              onClick={() => setView(v)}
+              className={
+                view === v
+                  ? "px-3 py-1.5 text-[13px] font-medium bg-[color:var(--text-primary)] text-white"
+                  : "px-3 py-1.5 text-[13px] text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]"
+              }
+            >
+              {label}
+            </button>
+          ))}
+        </div>
         <Link
           href="/about"
           className="pointer-events-auto text-[13px] !text-[color:var(--text-secondary)] hover:!text-[color:var(--text-primary)]"
@@ -77,7 +93,7 @@ export default function ExploreClient({
           What is this?
         </Link>
 
-        <div className="pointer-events-auto ml-6 flex-1 max-w-md">
+        <div className="pointer-events-auto ml-6 flex-1 max-w-md relative">
           <div className="relative">
             <input
               value={query}
@@ -110,22 +126,33 @@ export default function ExploreClient({
         </div>
       </div>
 
-      {/* Graph */}
+      {/* Graph / linear view */}
       <div className="absolute inset-0">
-        <PatternGraph
-          patterns={patterns}
-          connections={connections}
-          selectedId={selectedId}
-          onSelect={setSelectedId}
-          searchQuery={query}
-          highlightIds={highlightIds}
-        />
+        {view === "graph" ? (
+          <PatternGraph
+            patterns={patterns}
+            connections={connections}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+            searchQuery={query}
+            highlightIds={highlightIds}
+          />
+        ) : (
+          <LinearView
+            patterns={patterns}
+            connections={connections}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+            searchQuery={query}
+            highlightIds={highlightIds}
+          />
+        )}
       </div>
 
-      {/* Legend */}
+      {/* Legend (graph view only — list rows carry their own source dots) */}
       <div
         className="absolute bottom-5 left-5 z-20 card px-4 py-3 text-[12px] max-h-[70vh] overflow-y-auto"
-        style={{ maxWidth: 260 }}
+        style={{ maxWidth: 260, display: view === "graph" ? undefined : "none" }}
       >
         <div className="font-mono text-[10px] uppercase tracking-[0.14em] text-[color:var(--text-muted)] mb-2">
           Sources ({legendEntries.length})
@@ -191,7 +218,7 @@ function SearchResults({
   onSelect: (id: string) => void;
 }) {
   return (
-    <div className="card mt-2 py-1 overflow-hidden">
+    <div className="card py-1 overflow-hidden absolute left-0 right-0 top-full mt-2 z-40 max-h-[60vh] overflow-y-auto">
       {results.map((p) => (
         <button
           key={p.id}
