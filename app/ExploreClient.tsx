@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
+import { useCallback, useMemo, useState } from "react";
 import Fuse from "fuse.js";
 import PatternGraph from "./PatternGraph";
 import LinearView from "./LinearView";
@@ -12,19 +13,35 @@ import { colorForPattern, sourceNameForPattern } from "@/lib/palette";
 export default function ExploreClient({
   initialPatterns,
   initialConnections,
-  initialSelectedId = null,
 }: {
   initialPatterns: Pattern[];
   initialConnections: Connection[];
-  initialSelectedId?: string | null;
 }) {
   const [patterns] = useState(initialPatterns);
   const [connections] = useState(initialConnections);
-  const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId);
   const [query, setQuery] = useState("");
   const [view, setView] = useState<"graph" | "linear">("linear");
   const [sourceFilter, setSourceFilter] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // The selected pattern lives in the URL (?p=<slug>) so every pattern has a
+  // shareable link and back/forward moves through the selection history.
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const urlSelected = searchParams.get("p");
+  const selectedId =
+    urlSelected && patterns.some((p) => p.id === urlSelected) ? urlSelected : null;
+
+  const setSelectedId = useCallback(
+    (id: string | null) => {
+      const params = new URLSearchParams(window.location.search);
+      if (id) params.set("p", id);
+      else params.delete("p");
+      const qs = params.toString();
+      window.history.pushState(null, "", qs ? `${pathname}?${qs}` : pathname);
+    },
+    [pathname]
+  );
 
   const fuse = useMemo(
     () =>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Pattern, Connection } from "@/lib/types";
 import { colorForPattern, sourceNameForPattern } from "@/lib/palette";
 
@@ -72,6 +72,21 @@ export default function PatternPanel({
   const dotColor = colorForPattern(pattern);
   const sourceName = sourceNameForPattern(pattern);
 
+  const [copied, setCopied] = useState(false);
+  useEffect(() => {
+    setCopied(false);
+  }, [pattern.id]);
+  useEffect(() => {
+    if (!copied) return;
+    const t = setTimeout(() => setCopied(false), 1800);
+    return () => clearTimeout(t);
+  }, [copied]);
+
+  const copyLink = () => {
+    const url = `${window.location.origin}${window.location.pathname}?p=${encodeURIComponent(pattern.id)}`;
+    navigator.clipboard.writeText(url).then(() => setCopied(true));
+  };
+
   return (
     <aside
       className="fixed right-0 top-0 h-full w-full sm:w-[440px] bg-white border-l border-[color:var(--border)] shadow-[0_0_40px_rgba(0,0,0,0.06)] z-40 overflow-y-auto"
@@ -105,13 +120,22 @@ export default function PatternPanel({
                 : `User pattern · ${pattern.scale}`}
             </span>
           </div>
-          <button
-            onClick={onClose}
-            className="hidden sm:block text-[color:var(--text-muted)] hover:text-[color:var(--text-primary)] text-xl leading-none -mt-1 p-1 -m-1"
-            aria-label="Close"
-          >
-            ×
-          </button>
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <button
+              onClick={copyLink}
+              className="font-mono text-[10px] uppercase tracking-[0.14em] text-[color:var(--text-muted)] hover:text-[color:var(--text-primary)] whitespace-nowrap"
+              title="Copy a shareable link to this pattern"
+            >
+              {copied ? "Link copied ✓" : "Copy link"}
+            </button>
+            <button
+              onClick={onClose}
+              className="hidden sm:block text-[color:var(--text-muted)] hover:text-[color:var(--text-primary)] text-xl leading-none -mt-1 p-1 -m-1"
+              aria-label="Close"
+            >
+              ×
+            </button>
+          </div>
         </div>
         <h2
           className="text-[color:var(--text-primary)] tracking-tight"
